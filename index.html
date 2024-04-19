@@ -12,40 +12,41 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2>Formulário de Cadastro</h2>
-        </div>
-    </header>
-
     <div class="container">
+        <header>
+            <h2>Formulário de Cadastro</h2>
+        </header>
+        
         <form>
-            <label for="nome-completo">Nome Completo</label>
-            <input id="nome-completo" type="text" name="nome-completo">
+            <div class="formulario">
+                <label for="nome">Nome Completo</label>
+                <input id="nome" type="text" name="nome">
 
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email">
 
-            <label for="telefone">Telefone</label>
-            <input id="telefone" type="tel" name="telefone">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="tel" name="telefone">
 
-            <div class="form-campo">
                 <label for="cpf">CPF</label>
                 <input id="cpf" type="text" name="cpf">
+
+                <label for="endereco">Endereço Completo</label>
+                <input id="endereco" type="text" name="endereco">
+
+                <label for="cep">CEP</label>
+                <input id="cep" type="text" name="cep">
+
+                <button id="btn-cadastrar" type="submit">Cadastrar +</button>
             </div>
-
-            <label for="endereco">Endereço Completo</label>
-            <input id="endereco" type="text" name="endereco">
-
-            <button id="btn-cadastrar" type="submit">Cadastrar +</button>
         </form>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
