@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'sans-serif';
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 8px 0;
+    background-color: rgb(14, 36, 65);
+    color: #fff;
+    margin-bottom: 56px;
+}
+
+header .container,
+#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sobre {
+    align-items: flex-start;
+}
+
+header .container li {
+    list-style: none;
+    display: flex;
+    float: left;
+    padding: 16px;
+}
+
+header .container li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sobre {
+    margin-bottom: 56px;
+}
+
+#sobre img {
+    width: 480px;
+    margin-right: 32px;
+}
+
+#sobre h2,
+#sobre p {
+    margin-bottom: 16px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#produtos {
+    margin-bottom: 56px;
+}
+
+#produtos h2 {
+    margin-bottom: 16px;
+}
+
+.produto h4 {
+    font-size: 22px;
+}
+
+.produto p {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    color: #534e4e;
+    font-size: 14px;
+}
+
+.produto img {
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.produto button {
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(14, 36, 65);
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: rgb(7, 18, 32);
+}
+
+/* Parei aqui */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    #sobre {
+        display: block;
+        justify-content: center;
+    }
+
+    #sobre img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    #sobre {
+        display: block;
+        justify-content: center;
+    }
+
+    #sobre img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    #produtos .produto button {
+        margin-bottom: 32px;
+    }
+
+    #produtos h2,
+    #sobre h2 {
+        margin-bottom: 32px;
+    }
+
+    .lista-produtos {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
