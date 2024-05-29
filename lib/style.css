@@ -1,0 +1,46 @@
+header {
+    margin-bottom: 48px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    color: #dc1d1d;
+    font-weight: bold;
+}
+
+#logo {
+    max-height: 36px;
+    margin-right: 24px;
+}
+
+#carousel {
+    margin-bottom: 56px;
+}
+
+.row {
+    margin-top: 16px;
+}
+
+#mais-jogados {
+    margin-bottom: 128px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .col-4 {
+        width: 50%;
+        margin-bottom: 54px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col-4 {
+        width: 90%;
+        margin: 0 auto 54px auto;
+    }
+}
+
+
