@@ -24,8 +24,8 @@ function comprimeJS(){
 }
 
 exports.default = function(){
-    gulp.watch('./source/styles/*.scss', gulp.parallel(compilaSass));
-    gulp.watch('./source/images/*', gulp.parallel(comprimeImagens));
-    gulp.watch('./source/scripts/*.js', gulp.parallel(comprimeJS));
+    gulp.watch('./source/styles/*.scss', gulp.series(compilaSass));
+    gulp.watch('./source/images/*', gulp.series(comprimeImagens));
+    gulp.watch('./source/scripts/*.js', gulp.series(comprimeJS));
 }
 
